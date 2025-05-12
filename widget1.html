@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>IQAir Widget Resized</title>
+    <style>
+      .iframe-wrapper {
+        width: 256px;
+        height: 128px;
+        overflow: hidden;
+        border: 1px solid #ccc; /* ใส่ขอบเล็กน้อย */
+      }
+
+      .iframe-wrapper iframe {
+        width: 1024px;  /* ขนาดต้นฉบับใหญ่กว่ากรอบ 4 เท่า */
+        height: 512px;
+        transform: scale(0.25); /* ย่อเหลือ 25% */
+        transform-origin: top left;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="iframe-wrapper">
+      <iframe src="https://widget.iqair.com/assets/widgets/clients/ligman3.html"></iframe>
+    </div>
+  </body>
+</html>
